@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <h2>Invoice upload application made with vue and express</h2>
+    <inputform></inputform>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import inputform from './components/inputform.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: "App",
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  components: {
+    inputform,
+  }
+};
+</script>
+<style >
+h2{
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: gray;
 }
+
 </style>
